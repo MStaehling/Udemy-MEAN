@@ -18,10 +18,11 @@ exports.list = function(url, cb) {
       var $desc = $('.heightContainer img').attr('alt');
 
       console.log($img + ' pin url');
+
       var pin = {
-        img = $img,
-        url = $url,
-        desc = $desc
+        img: $img,
+        url: $url,
+        desc: $desc
       }
 
       //respond with final JSON object
