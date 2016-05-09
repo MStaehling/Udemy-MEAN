@@ -5,14 +5,14 @@ var Schema = mongoose.Schema;
 
 var LookSchema = new Schema({
   image: String,
-  linkUrl: String,
+  linkURL: String,
   title: String,
   description: String,
   tags: [{
     type: String
   }],
   _creator: {
-    type: Schema.ObjetId,
+    type: Schema.ObjectId,
     ref: 'User'
   },
   email: String,
@@ -29,6 +29,6 @@ var LookSchema = new Schema({
     type: Number,
     'default': 0
   }
-})
+});
 
 module.exports = mongoose.model('Look', LookSchema);
