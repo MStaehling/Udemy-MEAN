@@ -29,7 +29,7 @@
       });
 
       var alertFail = $alert({
-        title: 'Not saved',
+        title: 'Not saved ',
         content: 'New Look failed to save',
         placement: 'top-right',
         container: '#alertContainer',
@@ -52,7 +52,7 @@
           $scope.looks = data.data;
         })
         .catch(function(err) {
-          console.log('failed to get looks' + err);
+          console.log('failed to get loks' + err);
         });
 
       // Watch for changes to URL, Scrape and Display Results

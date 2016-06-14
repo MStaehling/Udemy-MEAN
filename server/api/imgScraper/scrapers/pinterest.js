@@ -5,9 +5,9 @@ var cheerio = require('cheerio');
 
 exports.list = function(url, cb) {
   request(url, function(error, resp, body) {
-    if(error){
+    if(error) {
       cb({
-        error:error
+        error: error
       });
     }
     if(!error){
@@ -25,8 +25,8 @@ exports.list = function(url, cb) {
         desc: $desc
       }
 
-      //respond with final JSON object
+      // respond with the final JSON object
       cb(pin);
     }
-  })
+  });
 }

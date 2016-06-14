@@ -27,10 +27,10 @@ exports.index = function(req, res) {
 exports.create = function (req, res, next) {
 
   // create a gravatar for our User
-var getGravatar = gravatar.url(req.body.email, {
-  s: 40,
-  d: 'retro'
-});
+  var getGravatar = gravatar.url(req.body.email, {
+    s: 40,
+    d: 'retro'
+  });
 
   var newUser = new User(req.body);
 
