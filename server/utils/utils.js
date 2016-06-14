@@ -12,7 +12,7 @@ exports.downloadURI = function(url, filename, callback) {
 }
 
 exports.randomizer = function(length, chars) {
-  var results = '';
+  var result = '';
   for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
   return result;
 }
